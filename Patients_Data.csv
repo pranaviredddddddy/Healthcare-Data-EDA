@@ -1,0 +1,101 @@
+patient_id,first_name,last_name,birth_date,gender,city,state
+1,Tom,Doe,1950-01-31,Male,Los Angeles,IL
+2,Anna,Doe,1950-02-28,Male,Los Angeles,AZ
+3,Paul,Johnson,1950-03-31,Female,Chicago,CA
+4,Tom,Doe,1950-04-30,Female,Houston,CA
+5,Mike,Doe,1950-05-31,Female,Los Angeles,IL
+6,Lucy,Johnson,1950-06-30,Male,New York,CA
+7,Paul,Johnson,1950-07-31,Male,Houston,NY
+8,Paul,Smith,1950-08-31,Female,Houston,AZ
+9,Tom,Williams,1950-09-30,Female,New York,TX
+10,Jane,Williams,1950-10-31,Female,Los Angeles,CA
+11,Mike,Doe,1950-11-30,Female,New York,NY
+12,Tom,Williams,1950-12-31,Male,Houston,TX
+13,Mike,Doe,1951-01-31,Female,Phoenix,AZ
+14,Mike,Smith,1951-02-28,Male,Phoenix,TX
+15,Lucy,Johnson,1951-03-31,Female,Chicago,NY
+16,Paul,Johnson,1951-04-30,Male,New York,TX
+17,Anna,Johnson,1951-05-31,Female,New York,IL
+18,Lucy,Williams,1951-06-30,Female,Chicago,TX
+19,Lucy,Smith,1951-07-31,Female,Chicago,CA
+20,Mike,Williams,1951-08-31,Female,Chicago,CA
+21,Laura,Williams,1951-09-30,Male,Houston,IL
+22,Paul,Smith,1951-10-31,Female,New York,NY
+23,Jane,Smith,1951-11-30,Male,Houston,CA
+24,Lucy,Smith,1951-12-31,Male,Chicago,AZ
+25,Anna,Smith,1952-01-31,Male,New York,CA
+26,Laura,Johnson,1952-02-29,Male,Houston,CA
+27,Laura,Brown,1952-03-31,Female,Houston,NY
+28,Jane,Brown,1952-04-30,Male,Chicago,TX
+29,Lucy,Smith,1952-05-31,Male,New York,CA
+30,Anna,Brown,1952-06-30,Male,Chicago,IL
+31,Paul,Brown,1952-07-31,Female,New York,TX
+32,John,Smith,1952-08-31,Female,Phoenix,AZ
+33,Anna,Brown,1952-09-30,Female,Los Angeles,NY
+34,Jane,Williams,1952-10-31,Female,Los Angeles,AZ
+35,Laura,Doe,1952-11-30,Male,Los Angeles,TX
+36,Paul,Doe,1952-12-31,Male,Chicago,TX
+37,Anna,Smith,1953-01-31,Female,Phoenix,TX
+38,John,Johnson,1953-02-28,Male,New York,AZ
+39,John,Smith,1953-03-31,Male,Houston,TX
+40,Mike,Johnson,1953-04-30,Male,New York,AZ
+41,Mike,Doe,1953-05-31,Female,Houston,TX
+42,Tom,Smith,1953-06-30,Female,New York,IL
+43,Jane,Williams,1953-07-31,Male,Phoenix,TX
+44,Lucy,Brown,1953-08-31,Female,Houston,AZ
+45,Anna,Johnson,1953-09-30,Female,Chicago,CA
+46,Anna,Brown,1953-10-31,Female,New York,TX
+47,Lucy,Brown,1953-11-30,Female,New York,CA
+48,Tom,Smith,1953-12-31,Female,Houston,IL
+49,Laura,Brown,1954-01-31,Male,Chicago,NY
+50,Laura,Williams,1954-02-28,Female,Chicago,IL
+51,Tom,Brown,1954-03-31,Male,Phoenix,TX
+52,Laura,Smith,1954-04-30,Male,Chicago,CA
+53,Mike,Williams,1954-05-31,Female,Chicago,CA
+54,Anna,Doe,1954-06-30,Male,Chicago,AZ
+55,Tom,Brown,1954-07-31,Male,Los Angeles,CA
+56,Anna,Smith,1954-08-31,Male,Phoenix,AZ
+57,Lucy,Doe,1954-09-30,Female,New York,NY
+58,John,Doe,1954-10-31,Female,Houston,TX
+59,Mike,Johnson,1954-11-30,Male,New York,AZ
+60,Paul,Williams,1954-12-31,Female,Phoenix,NY
+61,Mike,Brown,1955-01-31,Female,Houston,CA
+62,Tom,Smith,1955-02-28,Female,Phoenix,CA
+63,Paul,Johnson,1955-03-31,Female,Chicago,NY
+64,John,Williams,1955-04-30,Male,Houston,CA
+65,Tom,Johnson,1955-05-31,Male,Chicago,NY
+66,Jane,Williams,1955-06-30,Female,New York,AZ
+67,Anna,Williams,1955-07-31,Female,New York,AZ
+68,John,Brown,1955-08-31,Male,Houston,NY
+69,Anna,Williams,1955-09-30,Male,Houston,AZ
+70,Laura,Johnson,1955-10-31,Female,Phoenix,AZ
+71,Jane,Williams,1955-11-30,Male,Phoenix,AZ
+72,Jane,Brown,1955-12-31,Female,Chicago,IL
+73,John,Brown,1956-01-31,Female,Houston,TX
+74,Jane,Johnson,1956-02-29,Male,New York,CA
+75,Paul,Doe,1956-03-31,Male,Phoenix,IL
+76,Jane,Doe,1956-04-30,Female,Phoenix,AZ
+77,Anna,Williams,1956-05-31,Female,New York,NY
+78,Anna,Smith,1956-06-30,Male,Phoenix,AZ
+79,Tom,Williams,1956-07-31,Female,Chicago,TX
+80,Anna,Johnson,1956-08-31,Male,Houston,AZ
+81,Tom,Johnson,1956-09-30,Female,New York,NY
+82,Anna,Johnson,1956-10-31,Male,Houston,TX
+83,Paul,Johnson,1956-11-30,Male,Phoenix,AZ
+84,Lucy,Johnson,1956-12-31,Male,Phoenix,TX
+85,Tom,Brown,1957-01-31,Female,New York,CA
+86,Mike,Doe,1957-02-28,Female,Chicago,CA
+87,Laura,Johnson,1957-03-31,Male,Los Angeles,AZ
+88,John,Smith,1957-04-30,Female,New York,TX
+89,Anna,Smith,1957-05-31,Male,Los Angeles,NY
+90,Jane,Smith,1957-06-30,Male,Los Angeles,AZ
+91,Lucy,Smith,1957-07-31,Female,Chicago,CA
+92,Anna,Brown,1957-08-31,Female,Los Angeles,CA
+93,Jane,Smith,1957-09-30,Male,Los Angeles,AZ
+94,Laura,Johnson,1957-10-31,Female,Chicago,TX
+95,Laura,Williams,1957-11-30,Female,Los Angeles,CA
+96,Laura,Smith,1957-12-31,Male,Los Angeles,TX
+97,Jane,Brown,1958-01-31,Male,Los Angeles,CA
+98,Anna,Brown,1958-02-28,Female,New York,CA
+99,Laura,Smith,1958-03-31,Male,New York,IL
+100,Paul,Williams,1958-04-30,Male,New York,CA
