@@ -1,122 +1,86 @@
-# HEALTHEDA
-Health Data EDA
+Healthcare Data Exploratory Data Analysis (EDA)
+
+This repository contains an exploratory data analysis (EDA) of a sample healthcare dataset that I conducted.
+The analysis includes the examination of patient demographics, appointment details, diagnoses, and prescriptions data. 
+The purpose of this EDA is to uncover insights and relationships within the healthcare data, providing a foundation for 
+further analysis or model building.
+
+Dataset Description
+The dataset comprises four tables: patients, appointments, diagnoses, and prescriptions. Below is a brief description 
+of each table:
+
+patients: Contains information about patients, including their ID, name, birth date, gender, city, and state.
+appointments: Records details of patient appointments, including appointment ID, patient ID, appointment date, doctor ID, specialty, and status.
+diagnoses: Includes records of patient diagnoses, with diagnosis ID, patient ID, diagnosis date, diagnosis code, and description.
+prescriptions: Contains prescription data, including prescription ID, patient ID, doctor ID, medication, dosage, start date, and end date.
+
+EDA Steps
+1. Understanding the Data
+1.1 Get the Number of Records in Each Table:
+
+I determined the count of records in patients, appointments, diagnoses, and prescriptions tables.
+1.2 Get an Overview of Patients:
+
+I retrieved a sample of records from the patients table to understand the structure and contents.
+1.3 Get an Overview of Appointments:
+
+I retrieved a sample of records from the appointments table to understand the structure and contents.
+
+2. Basic Statistics
+2.1 Distribution of Patients by Gender:
+I calculated the distribution of patients based on gender.
+
+2.2 Distribution of Appointments by Status:
+I calculated the distribution of appointments based on their status (Completed, Cancelled, Scheduled).
+
+3. Time Series Analysis
+3.1 Number of Appointments Over Time:
+I analyzed the number of appointments over time to identify trends.
+
+3.2 Diagnoses Over Time:
+I analyzed the number of diagnoses over time to identify trends.
+
+4. Relationships and Trends
+4.1 Most Common Diagnoses:
+I identified the most common diagnoses by counting the occurrences of each diagnosis code and description.
+
+4.2 Medications Prescribed by Doctor:
+I determined the most frequently prescribed medications by each doctor.
+
+5. Join Tables for Deeper Insights
+5.1 Join Patients and Appointments:
+I joined the patients and appointments tables to get detailed information about patient appointments.
+
+5.2 Patients with Most Appointments:
+I identified the patients with the highest number of appointments.
 
 
-Step 1:** Understand the Data**
-1.1 Get the Number of Records in Each Table
--- Number of patients
+Insights from the Analysis
 
-SELECT COUNT(*) AS num_patients FROM patients;
-Result: 100
+Patient Demographics:
+The gender distribution of patients is nearly balanced, with a slight majority of male patients (51%).
+Patients are distributed across various cities and states, with no significant concentration in any specific area.
+Appointment Statistics:
 
--- Number of appointments
-SELECT COUNT(*) AS num_appointments FROM appointments;
-Result: 200
+The appointments are almost evenly distributed among the statuses: Completed, Cancelled, and Scheduled.
+There are observable trends in the number of appointments over time, which may indicate seasonal or other time-based patterns.
+Diagnosis Patterns:
 
--- Number of diagnoses
-SELECT COUNT(*) AS num_diagnoses FROM diagnoses;
-Result: 150
+The most common diagnoses are Hypertension, Cold, Flu, Cancer, and Diabetes.
+There are noticeable trends in the number of diagnoses over time, which can help in identifying patterns in disease prevalence.
+Prescription Trends:
 
--- Number of prescriptions
-SELECT COUNT(*) AS num_prescriptions FROM prescriptions;
-Result: 120
+Certain medications are prescribed more frequently by specific doctors, indicating specialization or preference in treatment approaches.
+There is a correlation between specific diagnoses and the number of prescriptions, highlighting common treatment practices.
+Patient Engagement:
 
-Get an Overview of Patients
-SELECT * FROM patients LIMIT 10;
+Some patients have a significantly higher number of appointments, which may indicate chronic conditions or frequent healthcare needs.
+Data Relationships:
 
- Get an Overview of Appointments
-SELECT * FROM appointments LIMIT 10;
+Joining different tables provided deeper insights into patient care, such as the relationship between diagnoses and prescriptions, and the detailed view of patient appointments.
+Usage
+The dataset and the SQL queries for performing the EDA are provided in the repository. You can use these queries to analyze your own healthcare data by following the same steps.
 
-2.1 Distribution of Patients by Gender
-
-SELECT gender, COUNT(*) AS num_patients
-FROM patients
-GROUP BY gender;
-
-gender	num_patients
-Male	  51
-Female	49
-
-Distribution of Appointments by Status
-
-SELECT status, COUNT(*) AS num_appointments
-FROM appointments
-GROUP BY status;
-
-status	  num_appointments
-Completed	68
-Cancelled	67
-Scheduled	65
-
-Time Series Analysis
-3.1 Number of Appointments Over Time
-SELECT appointment_date, COUNT(*) AS num_appointments
-FROM appointments
-GROUP BY appointment_date
-ORDER BY appointment_date;
-
-Diagnoses Over Time
-SELECT diagnosis_date, COUNT(*) AS num_diagnoses
-FROM diagnoses
-GROUP BY diagnosis_date
-ORDER BY diagnosis_date;
-
-
-Most Common Diagnoses
-
-SELECT diagnosis_code, description, COUNT(*) AS num_occurrences
-FROM diagnoses
-GROUP BY diagnosis_code, description
-ORDER BY num_occurrences DESC
-LIMIT 10;
-
-diagnosis_code	description	num_occurrences
-D005	Hypertension	32
-D001	Cold	31
-D004	Diabetes	28
-D003	Flu	30
-D002	Cancer	29
-
-Medications Prescribed by Doctor
-
-SELECT doctor_id, medication, COUNT(*) AS num_prescriptions
-FROM prescriptions
-GROUP BY doctor_id, medication
-ORDER BY num_prescriptions DESC
-LIMIT 10;
-
-doctor_id	medication	num_prescriptions
-17	MedB	5
-9	MedA	4
-19	MedE	4
-4	MedE	3
-7	MedA	3
-
-Join Patients and Appointments
-
-SELECT p.patient_id, p.first_name, p.last_name, a.appointment_date, a.specialty, a.status
-FROM patients p
-JOIN appointments a ON p.patient_id = a.patient_id
-LIMIT 3;
-
-patient_id	first_name	last_name	appointment_date	specialty	status
-1	Tom	Doe	2023-01-02	Orthopedics	Completed
-4	Tom	Doe	2023-01-04	Pediatrics	Completed
-96	Lucy	Smith	2023-01-01	Cardiology	Scheduled
-
-Patients with Most Appointments
-
-SELECT p.patient_id, p.first_name, p.last_name, COUNT(a.appointment_id) AS num_appointments
-FROM patients p
-JOIN appointments a ON p.patient_id = a.patient_id
-GROUP BY p.patient_id, p.first_name, p.last_name
-ORDER BY num_appointments DESC
-LIMIT 3;
-
-patient_id	first_name	last_name	num_appointments
-1	Tom	Doe	4
-4	Tom	Doe	4
-96	Lucy	Smith	4
-
-
-
+Conclusion
+This EDA provides a comprehensive overview of a healthcare dataset, helping to uncover key insights and relationships within the data. The analysis can be further extended to include
+more detailed investigations or to build predictive models based on the discovered patterns.
