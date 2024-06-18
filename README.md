@@ -1,7 +1,7 @@
 **Healthcare Data Exploratory Data Analysis (EDA)**
 
 This repository contains an exploratory data analysis (EDA) of a sample healthcare dataset that I conducted.
-The analysis includes the examination of patient demographics, appointment details, diagnoses, and prescriptions data. 
+The analysis includes the examination of patient demographics, appointment details, diagnoses, and prescription data. 
 The purpose of this EDA is to uncover insights and relationships within the healthcare data, providing a foundation for 
 further analysis or model building.
 
@@ -11,21 +11,24 @@ of each table:
 
 **patients:** Contains information about patients, including their ID, name, birth date, gender, city, and state.
 appointments: Records details of patient appointments, including appointment ID, patient ID, appointment date, doctor ID, specialty, and status.
+
 **diagnoses:** Includes records of patient diagnoses, with diagnosis ID, patient ID, diagnosis date, diagnosis code, and description.
-**prescriptions:** Contains prescription data, including prescription ID, patient ID, doctor ID, medication, dosage, start date, and end date.
+
+**Prescriptions:** Contains prescription data, including prescription ID, patient ID, doctor ID, medication, dosage, start date, and end date.
 
 **EDA Steps**
 **1. Understanding the Data**
 1.1 Get the Number of Records in Each Table:
-
 I determined the count of records in patients, appointments, diagnoses, and prescriptions tables.
-1.2 Get an Overview of Patients:
 
-I retrieved a sample of records from the patients table to understand the structure and contents.
+1.2 Get an Overview of Patients:
+I retrieved a sample of records from the patient's table to understand the structure and contents.
+
 1.3 Get an Overview of Appointments:
 I retrieved a sample of records from the appointments table to understand the structure and contents.
 
 **2. Basic Statistics**
+
 2.1 Distribution of Patients by Gender:
 I calculated the distribution of patients based on gender.
 
@@ -33,6 +36,7 @@ I calculated the distribution of patients based on gender.
 I calculated the distribution of appointments based on their status (Completed, Cancelled, Scheduled).
 
 **3. Time Series Analysis**
+
 3.1 Number of Appointments Over Time:
 I analyzed the number of appointments over time to identify trends.
 
@@ -40,6 +44,7 @@ I analyzed the number of appointments over time to identify trends.
 I analyzed the number of diagnoses over time to identify trends.
 
 **4. Relationships and Trends**
+
 4.1 Most Common Diagnoses:
 I identified the most common diagnoses by counting the occurrences of each diagnosis code and description.
 
@@ -77,9 +82,9 @@ Some patients have a significantly higher number of appointments, which may indi
 
 **Data Relationships:**
 Joining different tables provided deeper insights into patient care, such as the relationship between diagnoses and prescriptions, and the detailed view of patient appointments.
-Usage
 
 
 **Conclusion**
-This EDA provides a comprehensive overview of a healthcare dataset, helping to uncover key insights and relationships within the data. The analysis can be further extended to include
-more detailed investigations or to build predictive models based on the discovered patterns.
+
+
+This EDA provides a comprehensive overview of a healthcare dataset, helping to uncover key insights and relationships within the data. The analysis can be further extended to include more detailed investigations or to build predictive models based on the discovered patterns.
