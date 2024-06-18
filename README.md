@@ -51,7 +51,7 @@ I identified the most common diagnoses by counting the occurrences of each diagn
 4.2 Medications Prescribed by Doctor:
 I determined the most frequently prescribed medications by each doctor.
 
-**5. Join Tables **
+**5. Join Tables** 
 
 5.1 Join Patients and Appointments:
 I joined the patients and appointments tables to get detailed information about patient appointments.
